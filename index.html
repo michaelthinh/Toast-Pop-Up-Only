@@ -6,12 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Embed Fonts -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Font Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Toast Pop Up Only</title>
     </head>
     <body>
-        This is main
+        <div id="toast"></div>
+        <div>
+            <div onclick="showSuccessToast();" class="btn btn--success">
+                Success Toast Message
+            </div>
+            <div onclick="showErrorToast();" class="btn btn--danger">
+                Error Toast Message
+            </div>
+        </div>
+
         <script src="./assets/js/script.js"></script>
     </body>
 </html>
